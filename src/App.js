@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
+import Work from "./components/Work";
+
+import React, { useEffect } from 'react';
+
+
 
 function App() {
+
+  useEffect(() => {
+    document.title = "Daniel Navarrete";
+  }, []); // This useEffect hook will run once when the component mounts
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Navbar/>
+    <Hero/>
+    <Skills/>
+    <About/>
+    <Work/>
+    <Contact/>
+    <Footer/>
     </div>
   );
 }
