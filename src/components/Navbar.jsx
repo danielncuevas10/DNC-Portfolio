@@ -7,7 +7,7 @@ const Navbar = () => {
     const handleNav = () => {
         setNav(!nav)
     }
-
+/*
     return (
     
         <div className='bg-black text-gray-400 h-[100px] max-w-[1200px] mx-auto flex justify-between items-center'>
@@ -40,7 +40,7 @@ const Navbar = () => {
         
 
     
-  )
+  ) */
 }
 
 export default Navbar
